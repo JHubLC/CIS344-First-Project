@@ -1,0 +1,51 @@
+My platform was centered around the theme of a "Law Firm" and with that I had to incorporate code taken from chapters 1-7 of our online textbook. 
+
+"Home.php"
+To start, my "home.php" page displays a header and footer which is code that was adapted from chapter 5. I thought of the title "Daring Defenders Law Firm" as the name of the business and created a slogan with which to inform page visitors of the business goal. The header and footer are separate files displayed via a "require" statement which removes the need for me to manually code them in to each page. I had no real issues setting up this page.
+
+
+"Contacts.php"
+The contacts page was the first page that gave me real trouble as i could not figure out how to get data to appear in the correct cells. After doing some searching I found a different configuration for the <tr><td> tags that let me show the data on opposite sides and introduce a caption as well. I got the idea to add a table from the code present in chapter 7 and augmented it slightly to display the contact information. This page also contains a header and footer as to keep with the theme.
+
+
+"Services.php"
+The services page has a header and footer and is reused code from the "home.php" page with a few relevant changes made. Within the section tag I added an href that links to an external page titled "services.html" which contains a form allowing for visitors to purchase certain legal services. This page was fairly simple to construct, pairing the href with the <p> tag allowed for the hyperlink to be attached to certain words as I originally planned. Chapter 7 was used extensively in the creation of the form linked to the services.php page. The processorder.php and orderform.html can both be found in this page with the orderform being renamed to "services.html". Chapter 1 was also used to some extent as the only real change in the now named "services.html" was the addition of a submit order button seen in chapter 7.
+
+
+"About.php"
+The about page has a header and footer with code repurposed from the "home.php" page. The about page gives a fake summary regarding the creation of the Law Firm as well as showing a full size image of the page logo.I added a link to a form which provides a customer feedback page for better customer interaction. Using an <img> tag i was able to add in the logo but i then ran into the issue where it would not stay centered. I then applied a class to the <img> tag which I could then apply external css via a stylesheet.
+
+
+"Legal.php"
+The legal page has a header and footer with code repurposed from the "home.php" page. This page is directly linked to the footer where if you click on "legal information page" you will automatically be brought to the legal section of the platform. The section contains only two lines of text which serves to provide a warning to users looking to infringe on the rights of the Law Firm. There were no challenges associated with the creation of this specific page.
+
+
+"Header.php"
+The header page was code taken from chapter 5 and repurposed for the Law Firm platform. The image was changed to one I created online and then diplayed in full on the about.php page. The header also contains a CSS stylesheet that is linked underneath the title of the page, this stylesheet is what allowed me give the Law Firm its unique orange,navy blue,and white color that goes along with the color of the logo. The <nav> tag provides navigation links in which when users click on them, they are taken to the appropriate page. Inside of the <nav> tag are <div> and <span> tags that each have classes attached to them that allow for customization via the css stylesheet. I found this part of the project to be the most interesting because of how the <nav> tags work and seeing how a simple click could bring up a brand new page. This page was also the most prevalent page on this platform when paired with the footer, making it crucial to be done well for ease of access between pages. 
+
+
+"Footer.php"
+The footer page was code taken from chapter 5 that was then repurposed for the Law Firm platform. This page contains a message linking to the legal.php page that is visible on nearly every file in the platform. Along with the header, the footer appears the most across this entire project and helps to provide a uniform look even when every page contains different data. The hard part i found in this page was altering the text color for the hyperlink as there was already a style being applied to it. I overcame this trial by creating properties in the stylesheet that targeted the footer, specifically "footer a:visited". This change in the footer made it possible to alter the color of specific words without changing the overall color of the page itself.
+
+
+"style.css"
+The styles.css page, renamed style.css, was imported directly from chapter 6 and was used in nearly every page on the platform. Without the stylesheet the formatting, color, and font would all default to values I found unappealing. I kept most of the values in the sheet as they were as they fit the theme of the platform well. While a stylesheet is not needed to run this platform, I know that without it the final appearance of the pages would suffer.
+
+
+"Processorder.php"
+The processorder.php page was taken from Chapter 7 and repurposed for use in the Law Firm platform.This page took me the longest to create as I kept running into an error with the naming of the variables for the processorder.php file. Initially I wanted to name my variables "$theft", "$tresspassing", and "$loitering" and then simply change the defined prices to match. I kept running into an error that would state that the three variables I created were each showing as an "undefined array key". After going through many sources, including rewatching class videos, I found success in simply changing the ending of the names so that what was before "$theft, $tresspassing, $loitering" was now "$theftqty, $tresspassingqty, $loiteringqty".
+
+
+"Processfeedback.php"
+The processfeedback.php page was taken from code found in Chapter 4 and used in the Law Firm platform. I decided to add this page into the "about.php" page as a link in order to add another layer of interaction on the page for user engagement. The page still contains the mail section in the case that the mail server system is activated at some point. There was no challenge in the creation of this page.
+
+"View_orders.php"
+The view_orders.php page has code taken from Chapter 3 and repurposed for the Law Firm platform. This page takes the information written from the processorder.php page after the submit order button is pressed and displays them. A text file named "orders.txt" was created as the document root so that the information on what was purchased, the quantity, and the address could be stored. I had no trouble creating this page.
+
+
+"File_exceptions.php"
+The file_exceptions.php page was taken in its entirety from Chapter 7 for use in the Law Firm platform. This page was used unaltered as it was needed to be included as part of the code in processorder.php requires it to be run once. 
+
+
+
+

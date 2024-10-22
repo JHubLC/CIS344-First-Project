@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Daring Defenders Law Firm - Order Form</title>
+   <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="DDLF-logo.jfif" height="70" width="70">
+      <h1>Daring Defenders Law Firm</h1>
+     </header>
+  
+     <nav>
+      <div class="menuitem">
+      <a href="home.php">
+      <span class="menutext">Home</span>
+      </a>
+      </div>
+      
+      <div class="menuitem">
+            <a href="contact.php"> 
+            <span class="menutext">Contact</span>
+            </a>
+          </div>
+      
+          <div class="menuitem">
+            <a href="services.php">
+            <span class="menutext">Services</span>
+            </a>
+          </div>
+      
+          <div class="menuitem">
+            <a href="about.php">
+            <span class="menutext">About</span>
+            </a>
+          </div>
+      
+            <div class="menuitem">
+            <a href="legal.php">
+            <span class="menutext">Legal</span>
+            </a>
+          </div>
+     </nav>
+
+
+
+
+
+
+
+
+    <form action="processorder.php" method="post">
+    <table style="border: 0px;">
+    <tr style="background: #cccccc;">
+      <td style="width: 150px; text-align: center;">Charges</td>
+      <td style="width: 15px; text-align: center;">Quantity</td>
+    </tr>
+    <tr>
+      <td>Theft</td>
+      <td><input type="text" name="theftqty" size="3" maxlength="3" /></td>
+    </tr>
+    <tr>
+     <td>Tresspassing</td>
+     <td><input type="text" name="tresspassingqty" size="3" maxlength="3" /></td>
+    </tr>
+    <tr>
+     <td>Loitering</td>
+     <td><input type="text" name="loiteringqty" size="3" maxlength="3" /></td>
+    </tr>
+    <tr>
+      <td>Shipping Address</td>
+      <td><input type="text" name="address" size="50" maxlength="100"></td>
+    </tr>    
+    <tr>
+     <td colspan="2" style="text-align: center;"><input type="submit" value="Submit Order" /></td>
+    </tr>
+    </table>
+    </form>
+
+    <footer>
+      <p>&copy; Daring Defenders Law Firm<br />
+      Please see our 
+      <a href="legal.php">legal information page</a>.</p>
+  </footer>
+  
+  </body>
+</html>
